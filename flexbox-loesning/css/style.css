@@ -1,0 +1,255 @@
+/**
+ * projekt: Flexbox tutorial
+ * fil: css/style.css
+ **/
+
+/* Google fonts (NB: load før :root) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+:root {
+  /* farver */
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #3F4767;
+  --yellow: #EAA73B;
+  --red: #94462A;
+
+  /* fonte */
+  --font: 'Montserrat', sans-serif; /* brødtekst */
+  --displayH: 'Montserrat', sans-serif; /* overskrifter */
+
+  /* Animation from Wikipedia: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/StarfieldSimulation004.gif/258px-StarfieldSimulation004.gif */
+ --baggrund: url('../images/baggrund.png')
+}
+
+/* Her bruges en variabel: --blue */
+body {
+  background-color: var(--blue);
+  font-family: var(--font);
+  background-image: var(--baggrund);
+  background-size:100% auto;
+  background-repeat: no-repeat;
+}
+
+/* Typografi */
+h1 {
+  color: var(--blue);
+  text-align: center;
+  font-family: var(--displayH);
+  padding-bottom: 20px;
+}
+
+h2 {
+  color: var(--blue);
+  text-align: center;
+  font-family: var(--displayH);
+  padding-bottom: 20px;
+}
+
+/* Sætter en baggrund */
+header {
+}
+
+.rectangle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 80px;
+  width: 100%;
+  background-color: var(--white);
+}
+
+.center {
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 45.5%;
+  vertical-align: center;
+}
+
+/* Layout: Flexbox */
+/* tutorial: https://css-tricks.com/snippets/css/a-guide-to-flexbox */
+
+main {
+  width: 100%; /* do. */
+}
+
+/*
+  Løsnig: rækker med produkter.
+  Se filen: row-sample.html.
+*/
+
+.produkt {
+  width: 30%;
+}
+
+.produkt img {
+  width: 100%;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+.linkEt {
+  list-style-type: none;
+  position: fixed;
+  top: 4%;
+  left: 10%;
+}
+
+.linkTo {
+  list-style-type: none;
+  position: fixed;
+  top: 4%;
+  left: 30%;
+}
+
+.linkTre {
+  list-style-type: none;
+  position: fixed;
+  top: 4%;
+  right: 30%;
+}
+
+.linkFire {
+  list-style-type: none;
+  position: fixed;
+  top: 4%;
+  right: 10%;
+}
+
+#aaa {
+  float: left;
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+.reuse {
+  padding-left: 250px;
+  padding-bottom: 50px;
+}
+
+.column {
+  float: left;
+  width: 32.5%;
+}
+
+#galleri {
+  padding-left: 170px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#cares {
+  color: var(--white);
+  padding-top: 50px;
+  font-size: 40px;
+}
+
+#caresbody {
+  color: var(--white);
+  font-size: 20px;
+}
+
+#nyestetrends {
+  font-size: 40px;
+  padding-top: 80px;
+}
+
+#cafeen {
+  padding-top: 100px;
+  font-size: 40px;
+  color: var(--blue);
+}
+
+#nydkaffe {
+  font-size: 30px;
+  color: var(--white);
+  padding-top: 300px;
+}
+
+#kaffebody {
+  color: var(--white);
+  font-size: 18px;
+}
+
+#ccc {
+  float: left;
+  width: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+
+.cafebillede {
+  padding-top: 330px;
+  padding-bottom: 50px;
+}
+
+.column2 {
+  float: left;
+  width: 20%;
+}
+
+#galleri2 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Clear floats after image containers */
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#outfits {
+  font-size: 40px;
+  padding-top: 50px;
+}
+
+#hashtag {
+  float: right;
+  padding-right: 110px;
+  padding-top: 40px;
+  color: var(--red);
+}
+
+#teamet {
+  font-size: 40px;
+  padding-top: 110px;
+}
+
+#ddd {
+  float: right;
+  width: 50%;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-right: 80px;
+}
+
+.teambillede {
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
+
+footer {
+  padding-top: 600px;
+  color: var(--white);
+}
