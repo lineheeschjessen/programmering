@@ -1,0 +1,203 @@
+/* Google fonts (NB: load før :root) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+:root {
+  /* farver */
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #20272f;
+  --yellow: #EAA73B;
+  --red: #94462A;
+
+  /* fonte */
+  --font: 'Montserrat', sans-serif; /* brødtekst */
+  --displayH: 'Montserrat', sans-serif; /* overskrifter */
+}
+
+body {
+  background-color: var(--blue);
+}
+
+#baggrund {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/*
+#myVideo {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0px;
+  padding: 0px;
+}
+*/
+
+#topbillede {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0px;
+  padding: 0px;
+}
+.rectangle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 80px;
+  width: 100%;
+  background-color: var(--white);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--font);
+}
+
+a:hover {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+.logo {
+  position: fixed;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 3%;
+  top: 2.5%;
+}
+
+.linkEt {
+  list-style-type: none;
+  position: fixed;
+  top: 4%;
+  left: 55%;
+  font-size: 1.2vw;
+}
+
+.linkTo {
+  list-style-type: none;
+  position: fixed;
+  top: 4%;
+  left: 67%;
+  font-size: 1.2vw;
+}
+
+.linkTre {
+  list-style-type: none;
+  position: fixed;
+  top: 4%;
+  left: 75%;
+  font-size: 1.2vw;
+}
+
+.linkFire {
+  list-style-type: none;
+  position: fixed;
+  top: 4%;
+  left: 85%;
+  font-size: 1.2vw;
+}
+
+#billedtekst1 {
+  top: 9vw;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 50%;
+  font-size: 3.2vw;
+  color: var(--white);
+}
+
+#billedtekst2 {
+  top: 20vw;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 50%;
+  font-size: 1.2vw;
+  color: var(--white);
+}
+
+#overskrift1 {
+  text-align: right;
+  top: 52vw;
+  font-size: 3.2vw;
+  color: var(--white);
+  right: 10%;
+}
+
+#tekst1 {
+  text-align: right;
+  top: 60vw;
+  font-size: 1.2vw;
+  color: var(--white);
+  padding-right: 10%;
+  padding-left: 50%;
+}
+
+.knap1 {
+  position: absolute;
+  top: 74vw;
+  padding-right: 5%;
+  padding-left: 67%;
+}
+
+.vertical-align {
+  letter-spacing: -4px;
+  font-size: 0;
+}
+
+.vertical-align .col-xs-4 {
+  vertical-align: middle;
+  display: inline-block;
+  letter-spacing: 0;
+  font-size: 14px;
+  float: none;
+}
+
+.artikel1 {
+  position: absolute;
+  top: 107vw;
+  padding-right: 68%;
+  padding-left: 7%;
+}
+
+.artikel2 {
+  position: absolute;
+  top: 107vw;
+  padding-right: 37.5%;
+  padding-left: 37.5%;
+}
+
+.artikel3 {
+  position: absolute;
+  top: 107vw;
+  padding-right: 7%;
+  padding-left: 68%;
+}
+
+#rund {
+  border-radius: 50%;
+}
+
+h1 {
+  position: absolute;
+  font-family: var(--font);
+}
+
+h2 {
+  position: absolute;
+  font-family: var(--font);
+}
+
+h3 {
+  position: absolute;
+  font-family: var(--font);
+}
